@@ -39,11 +39,11 @@ first is dashboard which is the homepage of superadmin
 The homepage has information cards on total customers , total active customers, total consumption, Meters, linked meters.
 On clicking each tab, you are directed to the respective page; on clicking active customers you will be redirected to page where all active customers are displayed.
 There is chart also in this section which shows the CounsumptionSummary of all customers
-![Homepage image](https://gitlab.com/lvaidya/internmallmetering/-/raw/3d4eb73231bc24a60dff9a9e4280b587a1ec9088/frontend/sreenshots/Dashboard.png)
+![Homepage image](https://raw.githubusercontent.com/Abhis-123/Mallmetering/main/frontend/sreenshots/frontend/sreenshots/Dashboard.png)
 ### Customer Tab
 This section  has a table of all the customers present in databse within table we can sort ,delete and filter customers
 there is + icon on the right top corner  by clicking on that icon we can add new  customers and there is a edit button on each row 
-![Customer Table image](https://gitlab.com/lvaidya/internmallmetering/-/raw/3d4eb73231bc24a60dff9a9e4280b587a1ec9088/frontend/sreenshots/Screenshot%202021-07-06%20093248.png)
+![Customer Table image](https://raw.githubusercontent.com/Abhis-123/Mallmetering/main/frontend/sreenshots/Screenshot%202021-07-06%20093248.png)
 view button has not been implemented
 Add customer page in superadmin section 
 ![Register Customer](https://raw.githubusercontent.com/Abhis-123/Mallmetering/main/frontend/sreenshots/Screenshot%202021-07-06%20093344.png)
