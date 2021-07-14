@@ -15,7 +15,7 @@ These sections will be discussed in detail in the document  but first let's have
 
 
 ## Getting started
-1. Clone the project to your machine ```[https://gitlab.com/lvaidya/internmallmetering.git]```
+1. Clone the project to your machine ```[https://github.com/Abhis-123/Mallmetering.git]```
 2. Navigate into the diretory ```[cd internmallmetering]```
 4. Navigate to backend directory ```[cd backend]```
 5. Install the requirements ```[pip install (it will install all the requirements libraries for the project)]```
@@ -46,17 +46,17 @@ there is + icon on the right top corner  by clicking on that icon we can add new
 ![Customer Table image](https://gitlab.com/lvaidya/internmallmetering/-/raw/3d4eb73231bc24a60dff9a9e4280b587a1ec9088/frontend/sreenshots/Screenshot%202021-07-06%20093248.png)
 view button has not been implemented
 Add customer page in superadmin section 
-![Register Customer](https://gitlab.com/lvaidya/internmallmetering/-/raw/Abhishek6/frontend/sreenshots/Screenshot%202021-07-06%20093344.png)
+![Register Customer](https://raw.githubusercontent.com/Abhis-123/Mallmetering/main/frontend/sreenshots/Screenshot%202021-07-06%20093344.png)
 
 ### Supervisor Tab
 Supervisors can link meters to the customers and in this section we have table of supervisors.Here we can edit and delete supervisors . 
-![Supervisor Table Image](https://gitlab.com/lvaidya/internmallmetering/-/raw/Abhishek6/frontend/sreenshots/Screenshot%202021-07-06%20093424.png)
+![Supervisor Table Image](https://raw.githubusercontent.com/Abhis-123/Mallmetering/main/frontend/sreenshots/Screenshot%202021-07-06%20093424.png)
 
 By Clicking on + button on right corner of the table we can  navigate to register supervisor page where we can add new  supervisors.
 
 ###  **Test Data
 Over here, you can generate test data for meters, you have to select the date range for them. There is a dropdown for selecting meters and it has search functionality too
-![test data image](https://gitlab.com/lvaidya/internmallmetering/-/raw/Abhishek6/frontend/sreenshots/Screenshot%202021-07-06%20093458.png)
+![test data image](https://raw.githubusercontent.com/Abhis-123/Mallmetering/main/frontend/sreenshots/Screenshot%202021-07-06%20093458.png)
 This data is stored in Meter_readings database, which is accessed by dashboard to plot graph 
 
 ### Configuration
@@ -66,7 +66,7 @@ This section has table of meter connections which are registered in databse .Her
 in table meter name column contains the meter name and url contains the meter url.
 There is one more column which shows weather meter is linked to a customer or not 
 
-![Meter Table](https://gitlab.com/lvaidya/internmallmetering/-/raw/Abhishek6/frontend/sreenshots/Screenshot%202021-07-06%20093518.png)
+![Meter Table](https://raw.githubusercontent.com/Abhis-123/Mallmetering/main/frontend/sreenshots/Screenshot%202021-07-06%20093518.png)
 
 By clicking on + button we can create(add) new meter connection to the application flow.
 #### Archieve Data
@@ -74,17 +74,17 @@ This section is for cleaning the meter_reading table. In this section-
 we have to select two dates for the time range , and a perticular meter. The meter_readings will be fetched from database and will be downloded to  your system in csv or json format as per selection.
 You  can select the delete option also which will delete those redings from DB along with fetching.
 
-![Archive data Image](https://gitlab.com/lvaidya/internmallmetering/-/raw/Abhishek6/frontend/sreenshots/Screenshot%202021-07-06%20094020.png)
+![Archive data Image](https://raw.githubusercontent.com/Abhis-123/Mallmetering/main/frontend/sreenshots/Screenshot%202021-07-06%20094020.png)
 
 #### Memory Usage
 This section contains the dedtails regrading the disk storage used by various tables
-![Memory Usage Details](https://gitlab.com/lvaidya/internmallmetering/-/raw/Abhishek6/frontend/sreenshots/Screenshot%202021-07-06%20093956.png)
+![Memory Usage Details](https://raw.githubusercontent.com/Abhis-123/Mallmetering/main/frontend/sreenshots/Screenshot%202021-07-06%20093956.png)
 
 ### Profile 
 Here it is displayed your profile picture along with your name. On clicking the profile dropdown, you can view and edit your profile.
 Also logout option is there for logging out.
 in then profile section you can se and edit details inline.
-![Profile Section](https://gitlab.com/lvaidya/internmallmetering/-/raw/Abhishek6/frontend/sreenshots/Screenshot%202021-07-06%20094040.png)
+![Profile Section](https://raw.githubusercontent.com/Abhis-123/Mallmetering/main/frontend/sreenshots/Screenshot%202021-07-06%20094040.png)
 _________________________________________________________________________________________________
 ## **Supervisor**
 As you login to suoervisor, You will be directed to the Supervisor Dashboard.
