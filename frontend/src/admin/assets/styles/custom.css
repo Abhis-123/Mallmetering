@@ -1,0 +1,80 @@
+/***login page****/
+.logo{
+    background-color:transparent;
+    width: 100px;
+    margin-left: 1px;
+    max-width: 70px;
+    margin-top: -5px;
+    margin-left:10px;
+}
+.login-card-img{
+    width: 100%;
+    height:100%;
+    border-radius: 8px;
+}
+.card,.card-small {
+    box-shadow: 0 2px 0 rgba(90, 97, 105, 0.11), 0 1px 2px rgba(90, 97, 105, 0.12),
+      0 2px 2px rgba(90, 97, 105, 0.06), 0 5px 4px rgba(90, 97, 105, 0.1) !important;
+  }
+/*********** nav bar*****************************************************/
+.navbar-brand{
+    background-color:transparent;
+    width: 100px;
+    margin-left: 1px;
+}
+.navbar-brand>img{
+    max-width: 70px;
+    margin-top: -5px;
+    margin-left:10px;
+}
+.nav-link {
+    cursor: pointer;
+    text-decoration: none !important;
+    font-size:16px !important;
+    color:black !important;
+}
+.nav-link:hover{
+   color:rgb(90, 91, 108) !important; 
+   transition:all 0.1 s;
+   scale:1.2 !important;
+}
+.page-title{
+    display: block;
+    width: 100%;
+}
+
+.bb{
+    border-bottom: 1px solid #000000;
+}
+.bl{
+    border-left: 1px solid #000000;
+}
+.bt{
+    border-top: 1px solid #000000;
+}
+.br{
+    border-right: 1px solid #000000;
+}
+.mr-0{
+    margin-right: 0px;
+}
+.main-footer{
+    margin-bottom: 0px;
+    background-color: rgba(132, 129, 129, 0) !important;
+}
+.dowqq1anload-btn{
+    color: #000;
+    background-color:black;
+}
+
+@media (max-width:576px) {
+    .date-range .react-datepicker-wrapper {
+      max-width: 100%;
+    }
+    .table td, .table th{
+        padding:1px !important;
+        font-size: 11px;
+        font-weight:200;
+    }
+  }
+

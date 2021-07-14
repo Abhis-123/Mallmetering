@@ -1,0 +1,53 @@
+{
+  "name": "emeetring",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://me19b069.gitlab.io/emeetring/",
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
+    "bootstrap": "^5.0.1",
+    "camelize": "^1.0.0",
+    "chart.js": "^2.9.4",
+    "classnames": "^2.2.6",
+    "cross-env": "^5.2.0",
+    "d3": "^7.0.0",
+    "d3v4": "^4.2.2",
+    "datatables.net-dt": "^1.1.0",
+    "dateformat": "^3.0.3",
+    "flux": "^3.1.3",
+    "gh-pages": "^3.2.1",
+    "lodash.find": "^4.6.0",
+    "mui-datatables": "^3.7.7",
+    "react": "^16.14.0",
+    "react-bootstrap": "^1.6.0",
+    "react-csv": "^2.0.3",
+    "react-dom": "^16.14.0",
+    "react-ga": "^2.5.6",
+    "react-quill": "^1.3.3",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "react-select": "^4.3.1",
+    "shards-react": "^1.0.0",
+    "shortid": "^2.2.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "production": "HOST=164.52.200.223 PORT=8004 react-scripts start",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

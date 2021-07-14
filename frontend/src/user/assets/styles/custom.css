@@ -1,0 +1,88 @@
+/***login page****/
+.logo{
+    background-color:transparent;
+    width: 100px;
+    margin-left: 1px;
+    max-width: 70px;
+    margin-top: -5px;
+}
+
+.card{
+    box-shadow: 0 0.46875rem 2.1875rem rgb(90 97 105 / 10%),
+     0 0.9375rem 1.40625rem rgb(90 97 105 / 10%),
+      0 0.25rem 0.53125rem rgb(90 97 105 / 12%),
+       0 0.125rem 0.1875rem rgb(90 97 105 / 10%); 
+}
+/*********** nav bar*****************************************************/
+.navbar-brand{
+    background-color:transparent;
+    width: 100px;
+    margin-left: -10px;
+}
+.navbar-brand>img{
+    max-width: 120px;
+    margin-top: -20px;
+    margin-left:10px;
+}
+.nav-link {
+    cursor: pointer;
+}
+.page-title{
+    display: block;
+    width: 100%;
+}
+
+.bb{
+    border-bottom: 1px solid #000000;
+}
+.bl{
+    border-left: 1px solid #000000;
+}
+.bt{
+    border-top: 1px solid #000000;
+}
+.br{
+    border-right: 1px solid #000000;
+}
+.mr-0{
+    margin-right: 0px;
+}
+
+.dowqq1anload-btn{
+    color: #000;
+    background-color:black;
+}
+
+
+
+
+@media (max-width:576px) {
+    .table td, .table th{
+        padding:1px !important;
+        font-size: 11px;
+        font-weight:200;
+    }
+    .login-card{
+        position: relative;
+    }
+    .dowqq1anload-btn{
+        color: #000;
+        background-color:black;
+    }
+    
+  }
+.login-page {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed !important;
+    background-image: url("../images/5.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.login-card-description{
+    text-align:center;
+}
+.error{
+    color:red !important;
+}

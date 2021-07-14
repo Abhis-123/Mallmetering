@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: superadmin/components/layout/MainNavbar/MainNavbar.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: superadmin/components/layout/MainNavbar/MainNavbar.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React from "react";
+import PropTypes from "prop-types";
+import {  Navbar, NavbarBrand   } from "shards-react";
+import Logo from "../../../assets/logo/logo.jpg";
+import { NavItem, Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,NavLink,NavbarToggler,Nav, Collapse} from "shards-react";
+
+import Menu from "../../../assets/logo/menu.jpg";
+import AdminProfile from "./AdminProfile";
+class MainNavbar extends React.Component{
+  
+  constructor(props) {
+    super(props);
+
+    this.toggleDropdown = this.toggleDropdown.bind(this);
+    this.toggleNavbar = this.toggleNavbar.bind(this);
+
+    this.state = {
+      dropdownOpen: false,
+      collapseOpen: false,
+      currentpage:"",
+    };
+  }
+
+  toggleDropdown() {
+    this.setState({
+      ...this.state,
+      ...{
+        dropdownOpen: !this.state.dropdownOpen
+      }
+    });
+  }
+
+  toggleNavbar() {
+    this.setState({
+      ...this.state,
+      ...{
+        collapseOpen: !this.state.collapseOpen
+      }
+    });
+  }
+componentWillMount() {
+  this.setState({
+    currentpage:window.location.pathname
+  })
+}
+  
+ 
+render() {
+
+  return (
+    &lt;Navbar type="dark"  className="bg-white main-navbar  sticky-top" expand="sm">
+      
+    &lt;NavbarBrand href="/superadmin/home">&lt;img src={Logo}  alt="Logo"/>&lt;/NavbarBrand>
+    &lt;NavbarToggler onClick={this.toggleNavbar} >&lt;img style={{height:"20px" , width:"20px"}} src={Menu} alt="Menu"/>&lt;/NavbarToggler>
+    &lt;Collapse open={this.state.collapseOpen} className="navbar-collapse collapse justify-content-end"  navbar>
+      &lt;Nav navbar className="">
+        &lt;NavItem className={""+this.state.currentpage==="/superadmin/home"?"nav-link-active":"nav-link-inactive"}>
+          &lt;NavLink href="/superadmin/home" >
+            Dashboard
+          &lt;/NavLink>
+        &lt;/NavItem>
+        &lt;NavItem className={""+this.state.currentpage==="/superadmin/customers"?"nav-link-active":"nav-link-inactive"}>
+          &lt;NavLink href="/superadmin/customers" >
+            Customers
+          &lt;/NavLink>
+        &lt;/NavItem>
+        &lt;NavItem className={""+this.state.currentpage==="/superadmin/supervisers"?"nav-link-active":"nav-link-inactive"}>
+          &lt;NavLink  href="/superadmin/supervisers" >
+            Supervisors
+          &lt;/NavLink>
+
+        &lt;/NavItem>
+        &lt;NavItem className={""+this.state.currentpage==="/superadmin/configuration/test/dummydata"?"nav-link-active":"nav-link-inactive"}>
+          &lt;NavLink  href="/superadmin/configuration/test/dummydata" >
+              Test Data
+          &lt;/NavLink>
+          
+        &lt;/NavItem>
+        &lt;NavItem className={""+this.state.currentpage==="/superadmin/configuration/archivedata"
+                ||this.state.currentpage==="/superadmin/configuration/general"
+                ||this.state.currentpage==="/superadmin/meters"?"nav-link-active":"nav-link-inactive"}>
+        &lt;Dropdown
+              open={this.state.dropdownOpen}
+              toggle={this.toggleDropdown}
+            >
+              &lt;DropdownToggle nav  caret>
+              Configuration
+              &lt;/DropdownToggle>
+              &lt;DropdownMenu>
+                &lt;DropdownItem href="/superadmin/meters">Meters&lt;/DropdownItem>
+                &lt;DropdownItem href="/superadmin/configuration/archivedata">Archive Data&lt;/DropdownItem>
+                &lt;DropdownItem href="/superadmin/configuration/stats">Memory Usage&lt;/DropdownItem>
+              &lt;/DropdownMenu>
+            &lt;/Dropdown>
+            &lt;/NavItem>
+      {/* &lt;AdminProfile/> */}
+      &lt;NavItem> 
+         &lt;AdminProfile/>
+    &lt;/NavItem>
+      &lt;/Nav>
+    &lt;/Collapse>
+    
+  &lt;/Navbar>
+  );
+}
+};
+
+MainNavbar.propTypes = {
+  /**
+   * The layout type where the MainNavbar is used.
+   */
+  layout: PropTypes.string,
+  /**
+   * Whether the main navbar is sticky to the top, or not.
+   */
+  stickyTop: PropTypes.bool
+};
+
+MainNavbar.defaultProps = {
+  stickyTop: true
+};
+
+export default MainNavbar;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon Jul 05 2021 22:26:56 GMT+0530 (India Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
