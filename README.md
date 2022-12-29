@@ -1,5 +1,13 @@
 # Frontend of Mall Metering Project
-This document contains all the instructions to build the project and description about the sections.
+The project involves the development of a web application for monitoring the energy consumption of shops at a Mall. The application will be built using a combination of React, Django, and PostgreSQL.
+
+React will be used to build the front-end of the application, providing a user-friendly interface for viewing and interacting with the data. Django will be used to build the back-end, handling all of the data processing and storage. PostgreSQL will be used as the database to store the energy consumption data for each shop.
+
+The application will be designed to allow mall management to monitor the energy consumption of each shop in real-time. It will also provide historical data on energy consumption, allowing management to identify trends and patterns in energy usage.
+
+In addition to monitoring energy consumption, the application will also provide alerts when energy usage exceeds predetermined thresholds. This will allow management to quickly identify and address any issues with energy consumption.
+
+Overall, the goal of the project is to provide a tool for mall management to more effectively monitor and manage the energy consumption of their shops, ultimately leading to reduced energy costs and a more sustainable operation.
 ## Info. 
 This is a application which can be used to monitor the electricity usage by households .It has three sections 
  1. Superadmin 
